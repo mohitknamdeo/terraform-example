@@ -8,10 +8,3 @@ variable "AWS_ACCESS_KEY" {
 variable "AWS_SECRET_KEY" {
 }
 
-variable "AMIS" {
-  type = map(string)
-  default = {
-    us-east-2 = "ami-0fb653ca2d3203ac1"
-  }
-}
-

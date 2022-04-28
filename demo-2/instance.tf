@@ -7,6 +7,7 @@ resource "aws_instance" "example" {
   ami           = var.AMIS[var.AWS_REGION]
   instance_type = "t2.micro"
   key_name      = aws_key_pair.mykey.key_name
+  vpc_security_group_ids = ["sg-0244e996ff261947e"]
 
   provisioner "file" {
     source      = "script.sh"
